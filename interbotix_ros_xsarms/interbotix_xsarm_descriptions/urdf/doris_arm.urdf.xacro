@@ -54,7 +54,7 @@
     <joint name="waist" type="revolute">
         <axis xyz="0 0 1"/>
         <limit effort="10" lower="${-pi + pi_offset}" upper="${pi - pi_offset}" velocity="${pi}"/>
-        <origin rpy="0 0 0" xyz="0 0 0.049"/>
+        <origin rpy="0 0 0" xyz="0 0 0.023"/>
         <parent link="$(arg robot_name)/$(arg base_link_frame)"/>
         <child link="$(arg robot_name)/shoulder_link"/>
         <dynamics friction="0.1"/>
@@ -72,14 +72,14 @@
 
     <link name="$(arg robot_name)/shoulder_link">
         <visual>
-            <origin rpy="0 0 0" xyz="0 0 -0.003"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_2_shoulder.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="interbotix_black"/>
         </visual>
         <collision>
-            <origin rpy="0 0 0" xyz="0 0 -0.003"/>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_2_shoulder.stl" scale="0.001 0.001 0.001"/>
             </geometry>
@@ -192,14 +192,14 @@
 
     <link name="$(arg robot_name)/wrist_link">
         <visual>
-            <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
+            <origin rpy="0 0 ${pi}" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_5_wrist.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="interbotix_black"/>
         </visual>
         <collision>
-            <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
+            <origin rpy="0 0 ${pi}" xyz="0 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_5_wrist.stl" scale="0.001 0.001 0.001"/>
             </geometry>
@@ -232,14 +232,14 @@
 
     <link name="$(arg robot_name)/gripper_link">
         <visual>
-            <origin rpy="0 0 ${pi/2}" xyz="-0.02 0 0"/>
+            <origin rpy="0 0 0" xyz="-0.02 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_6_gripper.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="interbotix_black"/>
         </visual>
         <collision>
-            <origin rpy="0 0 ${pi/2}" xyz="-0.02 0 0"/>
+            <origin rpy="0 0 0" xyz="-0.02 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_6_gripper.stl" scale="0.001 0.001 0.001"/>
             </geometry>
@@ -285,7 +285,7 @@
     </transmission>
 
     <link name="$(arg robot_name)/gripper_prop_link">
-        <visual>
+        <!--visual>
             <origin rpy="0 0 ${pi/2}" xyz="-0.0685 0 0"/>
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_7_gripper_prop.stl" scale="0.001 0.001 0.001"/>
@@ -297,7 +297,7 @@
             <geometry>
                 <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_7_gripper_prop.stl" scale="0.001 0.001 0.001"/>
             </geometry>
-        </collision>
+        </collision-->
         <inertial>
             <origin rpy="0 0 ${pi/2}" xyz="0.0023780000 0.0000000285 0.0000000000"/>
             <mass value="0.008009" />
@@ -351,7 +351,7 @@
         </joint>
 
         <link name="$(arg robot_name)/gripper_bar_link">
-            <visual>
+            <!--visual>
                 <origin rpy="0 0 ${pi/2}" xyz="-0.063 0 0"/>
                 <geometry>
                     <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_8_gripper_bar.stl" scale="0.001 0.001 0.001"/>
@@ -363,7 +363,7 @@
                 <geometry>
                     <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_8_gripper_bar.stl" scale="0.001 0.001 0.001"/>
                 </geometry>
-            </collision>
+            </collision-->
             <inertial>
                 <origin rpy="0 0 ${pi/2}" xyz="0.0067940000 -0.0000004272 -0.0007760000"/>
                 <mass value="0.150986" />
@@ -410,14 +410,14 @@
 
             <link name="$(arg robot_name)/left_finger_link">
                 <visual>
-                    <origin rpy="${pi/2} ${-pi} ${pi/2}" xyz="-0.0404 -0.0575 0"/>
+                    <origin rpy="${pi} 0 0" xyz="0 0 0"/>
                     <geometry>
                         <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_9_gripper_finger.stl" scale="0.001 0.001 0.001"/>
                     </geometry>
                     <material name="interbotix_black"/>
                 </visual>
                 <collision>
-                    <origin rpy="${pi/2} ${-pi} ${pi/2}" xyz="-0.0404 -0.0575 0"/>
+                    <origin rpy="${pi} 0 0" xyz="0 0 0"/>
                     <geometry>
                         <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_9_gripper_finger.stl" scale="0.001 0.001 0.001"/>
                     </geometry>
@@ -453,14 +453,14 @@
 
             <link name="$(arg robot_name)/right_finger_link">
                 <visual>
-                    <origin rpy="${-pi/2} ${pi} ${-pi/2}" xyz="-0.0404 0.0575 0 "/>
+                    <origin rpy="0 0 0" xyz="0 0 0 "/>
                     <geometry>
                         <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_9_gripper_finger.stl" scale="0.001 0.001 0.001"/>
                     </geometry>
                     <material name="interbotix_black"/>
                 </visual>
                 <collision>
-                    <origin rpy="${-pi/2} ${pi} ${-pi/2}" xyz="-0.0404 0.0575 0 "/>
+                    <origin rpy="0 0 0" xyz="0 0 0 "/>
                     <geometry>
                         <mesh filename="package://interbotix_xsarm_descriptions/meshes/doris_arm_meshes/doris_arm_9_gripper_finger.stl" scale="0.001 0.001 0.001"/>
                     </geometry>

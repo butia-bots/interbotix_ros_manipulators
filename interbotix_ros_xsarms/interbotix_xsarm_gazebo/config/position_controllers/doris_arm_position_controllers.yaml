@@ -38,3 +38,22 @@ right_finger_controller:
   type: effort_controllers/JointPositionController
   joint: right_finger
   pid: {p: 50, i: 0.0, d: 5.0}
+
+joint_group_position_controller:
+  type: effort_controllers/JointGroupPositionController
+  joints:
+    - waist 
+    - shoulder
+    - elbow
+    - wrist_angle
+    - wrist_rotate
+  waist: 
+    pid: {p: 100, i: 0.0, d: 0.0}
+  shoulder:
+    pid: {p: 500, i: 0.0, d: 0.0}
+  elbow:
+    pid: {p: 300.0, i: 0.0, d: 0.0}
+  wrist_angle:
+    pid: {p: 50.0, i: 0.0, d: 0.0}
+  wrist_rotate:
+    pid: {p: 30.0, i: 0.0, d: 0.0}
