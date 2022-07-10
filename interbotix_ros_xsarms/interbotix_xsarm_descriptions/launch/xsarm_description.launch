@@ -11,11 +11,12 @@
   <arg name="use_rviz"                          default="true"/>
   <arg name="load_gazebo_configs"               default="false"/>
   <arg name="use_joint_pub"                     default="false"/>
+  <arg name="use_state_pub"                     default="true"/>
   <arg name="use_joint_pub_gui"                 default="false"/>
   <arg name="rate"                              default="10"/>
   <arg name="source_list"                       default="[]"/>
   <arg name="rvizconfig"                        default="$(find interbotix_xsarm_descriptions)/rviz/xsarm_description.rviz" />
-  <arg name="model"                             default="$(find interbotix_xsarm_descriptions)/urdf/$(arg robot_model).urdf.xacro
+  <arg name="model"                             default="$(find doris_arm_description)/urdf/$(arg robot_model).urdf.xacro
                                                          robot_name:=$(arg robot_name)
                                                          base_link_frame:=$(arg base_link_frame)
                                                          show_ar_tag:=$(arg show_ar_tag)
@@ -43,8 +44,8 @@
     ns="$(arg robot_name)">
   </node>
 
-  <node
-    name="robot_state_publisher"
+  <node if="$(arg use_state_pub)"
+    name="robot_state_publisher2"
     pkg="robot_state_publisher"
     type="robot_state_publisher"
     ns="$(arg robot_name)">

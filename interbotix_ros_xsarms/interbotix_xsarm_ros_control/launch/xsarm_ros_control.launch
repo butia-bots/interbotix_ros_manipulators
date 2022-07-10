@@ -9,6 +9,8 @@
   <arg name="use_rviz"                          default="false"/>
   <arg name="mode_configs"                      default="$(find interbotix_xsarm_ros_control)/config/modes.yaml"/>
   <arg name="dof"                               default="5"/>
+  <arg name="use_joint_pub"                     default="false"/>
+  <arg name="use_state_pub"                     default="true"/>
 
   <rosparam file="$(find interbotix_xsarm_ros_control)/config/$(arg dof)dof_controllers.yaml" command="load" ns="$(arg robot_name)"/>
   <rosparam file="$(find interbotix_xsarm_ros_control)/config/hardware.yaml" command="load" ns="$(arg robot_name)"/>
@@ -22,6 +24,8 @@
     <arg name="external_urdf_loc"                 value="$(arg external_urdf_loc)"/>
     <arg name="use_rviz"                          value="$(arg use_rviz)"/>
     <arg name="mode_configs"                      value="$(arg mode_configs)"/>
+    <arg name="use_joint_pub"                     value="$(arg use_joint_pub)"/>
+    <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
   </include>
 
   <node

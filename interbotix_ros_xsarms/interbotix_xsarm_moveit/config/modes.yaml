@@ -2,8 +2,8 @@ groups:
   arm:
     operating_mode: position
     profile_type: velocity
-    profile_velocity: 131
-    profile_acceleration: 25
+    profile_velocity: 40
+    profile_acceleration: 7.5
     torque_enable: true
 
 singles:

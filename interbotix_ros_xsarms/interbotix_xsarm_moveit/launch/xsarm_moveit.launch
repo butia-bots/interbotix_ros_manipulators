@@ -19,6 +19,9 @@
   <arg name="use_gazebo"                        default="false"/>
   <arg name="use_actual"                        default="false"/>
   <arg name="use_fake"                          default="false"/>
+  <arg name="use_joint_pub"                     default="false"/>
+  <arg name="use_state_pub"                     default="true"/>
+
   <arg name="dof"                               default="5"/>
   <arg name="world_name"                        default="$(find interbotix_xsarm_gazebo)/worlds/xsarm_gazebo.world"/>
 
@@ -48,6 +51,8 @@
     <arg name="use_rviz"                          value="false"/>
     <arg name="mode_configs"                      value="$(arg mode_configs)"/>
     <arg name="dof"                               value="$(arg dof)"/>
+    <arg name="use_joint_pub"                     value="$(arg use_joint_pub)"/>
+    <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
   </include>
 
   <include if="$(arg use_fake)" file="$(find interbotix_xsarm_descriptions)/launch/xsarm_description.launch">
