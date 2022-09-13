@@ -3,7 +3,7 @@ groups:
     operating_mode: position
     profile_type: velocity
     profile_velocity: 40
-    profile_acceleration: 7.5
+    profile_acceleration: 6.5
     torque_enable: true
 
 singles:

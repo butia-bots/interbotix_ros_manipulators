@@ -16,7 +16,7 @@
   <arg name="rate"                              default="10"/>
   <arg name="source_list"                       default="[]"/>
   <arg name="rvizconfig"                        default="$(find interbotix_xsarm_descriptions)/rviz/xsarm_description.rviz" />
-  <arg name="model"                             default="$(find doris_arm_description)/urdf/$(arg robot_model).urdf.xacro
+  <arg name="model"                             default="$(find interbotix_xsarm_descriptions)/urdf/$(arg robot_model).urdf.xacro
                                                          robot_name:=$(arg robot_name)
                                                          base_link_frame:=$(arg base_link_frame)
                                                          show_ar_tag:=$(arg show_ar_tag)

@@ -28,7 +28,7 @@ publish_joint_velocities: false
 publish_joint_accelerations: false
 
 ## MoveIt properties
-move_group_name:  interbotix_arm  # Often 'manipulator' or 'arm'
+move_group_name:  arm  # Often 'manipulator' or 'arm'
 planning_frame: doris_arm/base_link  # The MoveIt planning frame. Often 'base_link' or 'world'
 
 ## Other frames

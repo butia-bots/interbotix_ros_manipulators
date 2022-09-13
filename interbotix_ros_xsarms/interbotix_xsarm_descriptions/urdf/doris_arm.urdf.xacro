@@ -93,7 +93,7 @@
 
     <joint name="shoulder" type="revolute">
         <axis xyz="0 1 0"/>
-        <limit effort="20" lower="${radians(-106)}" upper="${radians(72)}" velocity="${pi}"/>
+        <limit effort="20" lower="${radians(-106)}" upper="${radians(120)}" velocity="${pi}"/>
         <origin rpy="0 0 0" xyz="0 0 0.05805"/>
         <parent link="$(arg robot_name)/shoulder_link"/>
         <child link="$(arg robot_name)/upper_arm_link"/>
@@ -391,7 +391,7 @@
 
             <joint name="left_finger" type="prismatic">
                 <axis xyz="0 1 0"/>
-                <limit effort="5" lower="0.021" upper="0.057" velocity="1"/>
+                <limit effort="2" lower="0.014" upper="0.06145" velocity="1"/>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <parent link="$(arg robot_name)/fingers_link"/>
                 <child link="$(arg robot_name)/left_finger_link"/>
@@ -431,7 +431,7 @@
 
             <joint name="right_finger" type="prismatic">
                 <axis xyz="0 1 0"/>
-                <limit effort="5" lower="-0.057" upper="-0.021" velocity="1"/>
+                <limit effort="2" lower="-0.06145" upper="-0.014" velocity="1"/>
                 <origin rpy="0 0 0" xyz="0 0 0"/>
                 <parent link="$(arg robot_name)/fingers_link"/>
                 <child link="$(arg robot_name)/right_finger_link"/>
