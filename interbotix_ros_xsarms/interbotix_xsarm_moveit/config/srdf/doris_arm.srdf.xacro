@@ -75,6 +75,13 @@
         <joint name="wrist_angle" value="0.3466796576976776" />
         <joint name="wrist_rotate" value="-0.003067961661145091" />
     </group_state>
+    <group_state name="BagHook" group="arm">
+        <joint name="elbow" value="1.0078253746032715" />
+        <joint name="shoulder" value="-0.18561168015003204" />
+        <joint name="waist" value="-0.02454369328916073" />
+        <joint name="wrist_angle" value="-1.5416507720947266" />
+        <joint name="wrist_rotate" value="-1.5907381772994995" />
+    </group_state>
     <group_state name="Closed" group="gripper">
         <joint name="left_finger" value="0.015" />
         <joint name="right_finger" value="-0.015" />
