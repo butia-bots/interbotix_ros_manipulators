@@ -54,12 +54,12 @@
         <joint name="wrist_angle" value="-0.7" />
         <joint name="wrist_rotate" value="0" />
     </group_state>
-    <group_state name="CraneOld" group="arm">
-        <joint name="elbow" value="0" />
-        <joint name="shoulder" value="-0.004601942375302315" />
-        <joint name="waist" value="0" />
-        <joint name="wrist_angle" value="1.4" />
-        <joint name="wrist_rotate" value="-1.57" />
+    <group_state name="CraneHigh" group="arm">
+        <joint name="elbow" value="0.0" />
+        <joint name="shoulder" value="0.25003886222839355" />
+        <joint name="waist" value="-0.04908738657832146" />
+        <joint name="wrist_angle" value="1.2701361179351807" />
+        <joint name="wrist_rotate" value="0.016873789951205254" />
     </group_state>
     <group_state name="Crane" group="arm">
         <joint name="elbow" value="0.026077674701809883" />
