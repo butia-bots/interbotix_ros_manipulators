@@ -42,24 +42,31 @@
     </group_state>
     <group_state name="Home" group="arm">
         <joint name="elbow" value="1.5493206977844238" />
-        <joint name="shoulder" value="-0.13499031960964203" />
-        <joint name="waist" value="-1.980369210243225" />
-        <joint name="wrist_angle" value="-1.5800002813339233" />
-        <joint name="wrist_rotate" value="-1.5999419689178467" />
+        <joint name="shoulder" value="0.0" />
+        <joint name="waist" value="-1.5707963267948966" />
+        <joint name="wrist_angle" value="-1.716524600982666" />
+        <joint name="wrist_rotate" value="1.6275537014007568" />
     </group_state>
     <group_state name="Retreat" group="arm">
-        <joint name="elbow" value="1.55" />
-        <joint name="shoulder" value="0" />
-        <joint name="waist" value="0" />
-        <joint name="wrist_angle" value="-0.7" />
-        <joint name="wrist_rotate" value="0" />
+        <joint name="elbow" value="1.667437195777893" />
+        <joint name="shoulder" value="-0.2684466540813446" />
+        <joint name="waist" value="-2.0678062438964844" />
+        <joint name="wrist_angle" value="-1.6428934335708618" />
+        <joint name="wrist_rotate" value="1.543184757232666" />
+    </group_state>
+        <group_state name="RetreatEmilly" group="arm">
+        <joint name="elbow" value="1.6106798648834229" />
+        <joint name="shoulder" value="-0.2684466540813446" />
+        <joint name="waist" value="-1.9819031953811646" />
+        <joint name="wrist_angle" value="-1.5846022367477417" />
+        <joint name="wrist_rotate" value="-0.023009711876511574" />
     </group_state>
     <group_state name="CraneHigh" group="arm">
-        <joint name="elbow" value="0.0" />
-        <joint name="shoulder" value="0.25003886222839355" />
-        <joint name="waist" value="-0.04908738657832146" />
-        <joint name="wrist_angle" value="1.2701361179351807" />
-        <joint name="wrist_rotate" value="0.016873789951205254" />
+        <joint name="elbow" value="0.11811652034521103" />
+        <joint name="shoulder" value="0.475534051656723" />
+        <joint name="waist" value="0.003067961661145091" />
+        <joint name="wrist_angle" value="0.872835099697113" />
+        <joint name="wrist_rotate" value="0.04295146465301514" />
     </group_state>
     <group_state name="Crane" group="arm">
         <joint name="elbow" value="0.026077674701809883" />
@@ -67,6 +74,34 @@
         <joint name="waist" value="0" />
         <joint name="wrist_angle" value="0.6826214790344238" />
         <joint name="wrist_rotate" value="0.01840776950120926" />
+    </group_state>
+        <group_state name="Pick" group="arm">
+        <joint name="elbow" value="0.5675728917121887" />
+        <joint name="shoulder" value="1.0937283039093018" />
+        <joint name="waist" value="0.07056311517953873" />
+        <joint name="wrist_angle" value="0.11965050548315048" />
+        <joint name="wrist_rotate" value="1.494097352027893" />
+    </group_state>
+    <group_state name="PickUp" group="arm">
+        <joint name="elbow" value="0.3988350033760071" />
+        <joint name="shoulder" value="1.3192235231399536" />
+        <joint name="waist" value="0.0782330259680748" />
+        <joint name="wrist_angle" value="0.10277671366930008" />
+        <joint name="wrist_rotate" value="1.4864274263381958" />
+    </group_state>
+        <group_state name="PickBack" group="arm">
+        <joint name="elbow" value="0.026077674701809883" />
+        <joint name="shoulder" value="1.5155730247497559" />
+        <joint name="waist" value="0.01840776950120926" />
+        <joint name="wrist_angle" value="-1.716524600982666" />
+        <joint name="wrist_rotate" value="1.6275537014007568" />
+    </group_state>
+        <group_state name="PrePickBack" group="arm">
+        <joint name="elbow" value="1.3054176568984985" />
+        <joint name="shoulder" value="-0.12271846830844879" />
+        <joint name="waist" value="0" />
+        <joint name="wrist_angle" value="-1.716524600982666" />
+        <joint name="wrist_rotate" value="1.6275537014007568" />
     </group_state>
     <group_state name="GarbagePick" group="arm">
         <joint name="elbow" value="-0.6703495979309082" />
@@ -81,6 +116,17 @@
         <joint name="waist" value="-0.02454369328916073" />
         <joint name="wrist_angle" value="-1.5416507720947266" />
         <joint name="wrist_rotate" value="-1.5907381772994995" />
+    </group_state>
+    <group_state name="BagNav" group="arm">
+        <joint name="elbow" value="1.3360973596572876" />
+        <joint name="shoulder" value="-0.11198060214519501" />
+        <joint name="waist" value="0.05062136799097061" />
+        <joint name="wrist_angle" value="-1.6873788833618164" />
+        <joint name="wrist_rotate" value="-1.6352235078811646" />
+    </group_state>
+    <group_state name="BagGripper" group="gripper">
+        <joint name="left_finger" value="0.020" />
+        <joint name="right_finger" value="-0.020" />
     </group_state>
     <group_state name="Closed" group="gripper">
         <joint name="left_finger" value="0.015" />
