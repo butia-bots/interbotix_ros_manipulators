@@ -8,9 +8,9 @@
   <rosparam command="load" file="$(find interbotix_xsarm_moveit)/config/sensors_3d.yaml" />
 
   <!-- Params for the octomap monitor -->
-  <!-- <param name="octomap_frame" type="string" value="$(arg robot_name)/$(arg base_link_frame)" /> -->
+  <param name="octomap_frame" type="string" value="$(arg robot_name)/$(arg base_link_frame)" />
   <param name="octomap_resolution" type="double" value="0.025" />
-  <param name="max_range" type="double" value="5.0" />
+  <param name="max_range" type="double" value="3.0" />
 
   <!-- Load the robot specific sensor manager; this sets the moveit_sensor_manager ROS parameter -->
   <include file="$(find interbotix_xsarm_moveit)/launch/xsarm_moveit_sensor_manager.launch.xml"/>
