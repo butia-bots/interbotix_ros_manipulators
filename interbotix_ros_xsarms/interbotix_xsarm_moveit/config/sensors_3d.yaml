@@ -6,6 +6,6 @@ sensors:
     point_subsample: 1
     padding_offset: 0.1
     padding_scale: 0.2
-    max_update_rate: 5.0
+    max_update_rate: 10.0
     filtered_cloud_topic: /octomap_point_cloud_centers
     ns: realsense
