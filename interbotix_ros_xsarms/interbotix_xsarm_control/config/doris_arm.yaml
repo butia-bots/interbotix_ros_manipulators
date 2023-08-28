@@ -13,7 +13,7 @@ groups:
 
 grippers:
   gripper:
-    horn_radius: 0.0226672 #interbotix_finger: 0.02375
+    horn_radius: 0.02272 #interbotix_finger: 0.02375
     arm_length: 0.03775000 #interbotix_finger
     #horn_radius: 0.02575 #flex_finger
     #arm_length: 0.03575000 #flex_finger
