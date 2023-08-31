@@ -48,11 +48,11 @@
         <joint name="wrist_rotate" value="1.6275537014007568" />
     </group_state>
     <group_state name="NewScissorsHome" group="arm">
-        <joint name="elbow" value="1.5493206977844238" />
-        <joint name="shoulder" value="0.0" />
-        <joint name="waist" value="-1.5707963267948966" />
-        <joint name="wrist_angle" value="-1.6643692255020142" />
-        <joint name="wrist_rotate" value="-0.026077674701809883" />
+        <joint name="elbow" value="1.5984079837799072" />
+        <joint name="shoulder" value="-0.1257864236831665" />
+        <joint name="waist" value="1.555456519126892" />
+        <joint name="wrist_angle" value="-1.6735731363296509" />
+        <joint name="wrist_rotate" value="-0.07516506314277649" />
     </group_state>
     <group_state name="Retreat" group="arm">
         <joint name="elbow" value="1.667437195777893" />
