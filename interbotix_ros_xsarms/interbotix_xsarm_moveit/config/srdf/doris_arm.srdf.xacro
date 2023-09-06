@@ -40,6 +40,13 @@
         <joint name="wrist_angle" value="-1.4097284078598022" />
         <joint name="wrist_rotate" value="-0.030679617077112198" />
     </group_state>
+    <group_state name="PrePickGarbage" group="arm">
+        <joint name="elbow" value="1.3054176568984985" />
+        <joint name="shoulder" value="-0.12271846830844879" />
+        <joint name="waist" value="0" />
+        <joint name="wrist_angle" value="-1.4097284078598022" />
+        <joint name="wrist_rotate" value="1.494097352027893" />
+    </group_state>
     <group_state name="Home" group="arm">
         <joint name="elbow" value="1.5493206977844238" />
         <joint name="shoulder" value="0.0" />
