@@ -140,6 +140,13 @@
         <joint name="left_finger" value="0.03" />
         <joint name="right_finger" value="-0.03" />
     </group_state>
+    <group_state name="release_1" group="arm">
+        <joint name="elbow" value="-0.3911651074886322" />
+        <joint name="shoulder" value="0.7225049734115601" />
+        <joint name="waist" value="-0.200951486825943" />
+        <joint name="wrist_angle" value="-0.3911651074886322" />
+        <joint name="wrist_rotate" value="-0.04601942375302315" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="$(arg robot_name)/ee_gripper_link" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
