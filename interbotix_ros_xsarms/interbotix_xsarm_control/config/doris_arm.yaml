@@ -1,7 +1,7 @@
 port: /dev/ttyARM
 
 joint_order: [waist, shoulder, elbow, wrist_angle, wrist_rotate, gripper]
-sleep_positions: [0, -0.12271846830844879, 1.3054176568984985, -1.4097284078598022, -0.030679617077112198]
+sleep_positions: [0, -0.12271846830844879, 1.3054176568984985, -1.4097284078598022, -0.030679617077112198, 0]
 
 joint_state_publisher:
   update_rate: 100
