@@ -147,12 +147,19 @@
         <joint name="wrist_angle" value="-0.3911651074886322" />
         <joint name="wrist_rotate" value="-0.04601942375302315" />
     </group_state>
-        <group_state name="pre_release" group="arm">
+    <group_state name="pre_release" group="arm">
         <joint name="elbow" value="0.16106799244880676" />
         <joint name="shoulder" value="-0.06596117466688156" />
         <joint name="waist" value="-0.04295146465301514" />
         <joint name="wrist_angle" value="0.05368933081626892" />
         <joint name="wrist_rotate" value="-0.03681553900241852" />
+    </group_state>
+    <group_state name="Home_manipulation" group="arm">
+        <joint name="elbow" value="1.3115535974502563" />
+        <joint name="shoulder" value="0.4049709439277649" />
+        <joint name="waist" value="1.8637866973876953," />
+        <joint name="wrist_angle" value="0.04908738657832146" />
+        <joint name="wrist_rotate" value="0.07976700365543365" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="$(arg robot_name)/ee_gripper_link" group="gripper" />
