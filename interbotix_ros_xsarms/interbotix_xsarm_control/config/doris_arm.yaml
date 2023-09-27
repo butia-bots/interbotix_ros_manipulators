@@ -37,8 +37,8 @@ motors:
     Return_Delay_Time: 0
     Drive_Mode: 0
     Velocity_Limit: 131
-    Min_Position_Limit: 1300
-    Max_Position_Limit: 2600
+    Min_Position_Limit: 0
+    Max_Position_Limit: 4095
     Secondary_ID: 255
 
   shoulder:
@@ -48,7 +48,7 @@ motors:
     Drive_Mode: 1
     Velocity_Limit: 131
     Min_Position_Limit: 1900
-    Max_Position_Limit: 2800
+    Max_Position_Limit: 4095
     Secondary_ID: 255
 
   shoulder_shadow:
