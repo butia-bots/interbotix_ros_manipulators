@@ -157,7 +157,7 @@
     <group_state name="Home_manipulation" group="arm">
         <joint name="elbow" value="1.3115535974502563" />
         <joint name="shoulder" value="0.4049709439277649" />
-        <joint name="waist" value="1.8637866973876953," />
+        <joint name="waist" value="1.8637866973876953" />
         <joint name="wrist_angle" value="0.04908738657832146" />
         <joint name="wrist_rotate" value="0.07976700365543365" />
     </group_state>
