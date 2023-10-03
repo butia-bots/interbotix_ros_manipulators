@@ -47,6 +47,13 @@
         <joint name="wrist_angle" value="-1.4097284078598022" />
         <joint name="wrist_rotate" value="1.494097352027893" />
     </group_state>
+    <group_state name="ReleaseBag" group="arm">
+        <joint name="elbow" value="0.6504078507423401" />
+        <joint name="shoulder" value="-0.3911651074886322" />
+        <joint name="waist" value="1.8361750841140747" />
+        <joint name="wrist_angle" value="1.5477867126464844" />
+        <joint name="wrist_rotate" value="1.6520973443984985" />
+    </group_state>
     <group_state name="DropGarbage" group="arm">
         <joint name="elbow" value="1.3176895380020142" />
         <joint name="shoulder" value="-0.08283496648073196" />
