@@ -69,7 +69,7 @@ motors:
     Drive_Mode: 1
     Velocity_Limit: 131
     Min_Position_Limit: 898
-    Max_Position_Limit: 3094
+    Max_Position_Limit: 4095
     Secondary_ID: 255
 
   elbow_shadow:

@@ -161,6 +161,13 @@
         <joint name="wrist_angle" value="0.04908738657832146" />
         <joint name="wrist_rotate" value="0.07976700365543365" />
     </group_state>
+    <group_state name="Pre_Release_manipulation" group="arm">
+        <joint name="elbow" value="0.9142525792121887" />
+        <joint name="shoulder" value="0.780796229839325" />
+        <joint name="waist" value="-0.016873789951205254" />
+        <joint name="wrist_angle" value="-1.6474953889846802" />
+        <joint name="wrist_rotate" value="0.07516506314277649" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="$(arg robot_name)/ee_gripper_link" group="gripper" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
