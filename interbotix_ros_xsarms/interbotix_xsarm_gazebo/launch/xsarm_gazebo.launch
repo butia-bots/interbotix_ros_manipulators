@@ -22,17 +22,9 @@
   <arg name="use_position_controllers"          default="false"/>
   <arg name="use_trajectory_controllers"        default="false"/>
   <arg name="dof"                               default="5"/>
+  <arg name="start_sim"                               default="false"/>
 
   <env name="GAZEBO_RESOURCE_PATH"              value="$(find interbotix_xsarm_gazebo)"/>
-
-  <!--include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name"                        value="$(arg world_name)"/>
-    <arg name="gui"                               value="$(arg gui)" />
-    <arg name="debug"                             value="$(arg debug)" />
-    <arg name="paused"                            value="$(arg paused)"/>
-    <arg name="recording"                         value="$(arg recording)"/>
-    <arg name="use_sim_time"                      value="$(arg use_sim_time)"/>
-  </include-->
 
   <group if="$(arg use_trajectory_controllers)">
 
@@ -88,7 +80,18 @@
 
   </group>
 
-  <!--include file="$(find interbotix_xsarm_descriptions)/launch/xsarm_description.launch">
+  <group if="$(arg start_sim)">
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="recording" value="$(arg recording)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+  </include>
+    
+  <include file="$(find interbotix_xsarm_descriptions)/launch/xsarm_description.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="base_link_frame"                   value="$(arg base_link_frame)"/>
@@ -108,6 +111,8 @@
     respawn="false"
     output="screen"
     ns="$(arg robot_name)"
-	  args="-urdf -model $(arg robot_model) -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw)"/-->
+	  args="-urdf -model $(arg robot_model) -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -Y $(arg yaw)"/>
+  </group>
+
 
 </launch>

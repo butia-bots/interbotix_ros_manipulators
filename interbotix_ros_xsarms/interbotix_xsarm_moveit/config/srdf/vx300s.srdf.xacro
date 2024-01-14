@@ -38,7 +38,7 @@
         <joint name="forearm_roll" value="0" />
         <joint name="shoulder" value="0" />
         <joint name="waist" value="0" />
-        <joint name="wrist_angle" value="0" />
+        <joint name="wrist_angle" value="1.5708" />
         <joint name="wrist_rotate" value="0" />
     </group_state>
     <group_state name="Upright" group="interbotix_arm">

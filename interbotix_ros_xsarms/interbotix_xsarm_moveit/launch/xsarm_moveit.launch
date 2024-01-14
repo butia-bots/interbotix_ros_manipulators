@@ -21,6 +21,8 @@
   <arg name="use_fake"                          default="false"/>
   <arg name="use_joint_pub"                     default="false"/>
   <arg name="use_state_pub"                     default="true"/>
+  <arg name="start_sim" default="false"/>
+  <arg name="paused" default="true"/>
 
   <arg name="dof"                               default="5"/>
   <arg name="world_name"                        default="$(find interbotix_xsarm_gazebo)/worlds/xsarm_gazebo.world"/>
@@ -39,6 +41,8 @@
     <arg name="yaw" default="$(arg yaw)"/>
     <arg name="use_trajectory_controllers"        value="$(arg use_trajectory_controllers)"/>
     <arg name="use_position_controllers"        value="$(arg use_position_controllers)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="start_sim"        value="$(arg start_sim)"/>
   </include>
 
   <include if="$(arg use_actual)" file="$(find interbotix_xsarm_ros_control)/launch/xsarm_ros_control.launch">
