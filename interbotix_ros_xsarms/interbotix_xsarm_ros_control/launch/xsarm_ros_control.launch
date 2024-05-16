@@ -9,7 +9,7 @@
   <arg name="use_rviz"                          default="false"/>
   <arg name="mode_configs"                      default="$(find interbotix_xsarm_ros_control)/config/modes.yaml"/>
   <arg name="dof"                               default="5"/>
-  <arg name="use_joint_pub"                     default="false"/>
+  <arg name="use_joint_pub"                     default="true"/>
   <arg name="use_state_pub"                     default="true"/>
 
   <rosparam file="$(find interbotix_xsarm_ros_control)/config/$(arg dof)dof_controllers.yaml" command="load" ns="$(arg robot_name)"/>

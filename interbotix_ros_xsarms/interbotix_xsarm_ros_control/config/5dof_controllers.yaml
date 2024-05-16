@@ -1,4 +1,5 @@
 arm_controller:
+  action_ns: /wx200/arm_controller/follow_joint_trajectory/status
   type: position_controllers/JointTrajectoryController
   joints:
     - waist

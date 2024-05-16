@@ -4,10 +4,11 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /MotionPlanning1
+        - /Global Options1
         - /MotionPlanning1/Planning Request1
+        - /TF1/Frames1
       Splitter Ratio: 0.4172767102718353
-    Tree Height: 70
+    Tree Height: 397
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -71,70 +72,99 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          doris_arm/base_link:
+          camera_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/ee_arm_link:
+          camera_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          doris_arm/ee_gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/fingers_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/forearm_link:
+          head_pan_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/gripper_bar_link:
+          head_pan_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          doris_arm/gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/gripper_prop_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/left_finger_link:
+          head_tilt_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/right_finger_link:
+          head_tilt_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          doris_arm/shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/upper_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           world:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          wx200/base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/ee_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/ee_gripper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/fingers_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_bar_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_prop_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/left_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/right_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/wrist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -158,7 +188,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: arm
+        Planning Group: interbotix_arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -181,70 +211,99 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          doris_arm/base_link:
+          camera_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/ee_arm_link:
+          camera_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          doris_arm/ee_gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/fingers_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/forearm_link:
+          head_pan_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/gripper_bar_link:
+          head_pan_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          doris_arm/gripper_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/gripper_prop_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          doris_arm/left_finger_link:
+          head_tilt_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          doris_arm/right_finger_link:
+          head_tilt_link_static:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          doris_arm/shoulder_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/upper_arm_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          doris_arm/wrist_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           world:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          wx200/base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/ee_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/ee_gripper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/fingers_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          wx200/forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_bar_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/gripper_prop_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/left_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/right_finger_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          wx200/wrist_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -252,11 +311,133 @@ Visualization Manager:
       Velocity_Scaling_Factor: 0.5
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /rviz_visual_tools
+      Marker Topic: /butia_vision/br/object_recognition_markers
       Name: MarkerArray
       Namespaces:
-        {}
+        bboxes: true
+        texts: true
       Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic: /butia_vision/bvb/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        camera_aligned_depth_to_color_frame:
+          Value: false
+        camera_color_frame:
+          Value: false
+        camera_color_optical_frame:
+          Value: false
+        camera_depth_frame:
+          Value: false
+        camera_depth_optical_frame:
+          Value: false
+        camera_link:
+          Value: false
+        camera_link_static:
+          Value: false
+        head_pan_link_static:
+          Value: false
+        head_tilt_link_static:
+          Value: false
+        world:
+          Value: false
+        wx200/base_link:
+          Value: false
+        wx200/ee_arm_link:
+          Value: false
+        wx200/ee_gripper_link:
+          Value: false
+        wx200/fingers_link:
+          Value: false
+        wx200/forearm_link:
+          Value: false
+        wx200/gripper_bar_link:
+          Value: false
+        wx200/gripper_link:
+          Value: false
+        wx200/gripper_prop_link:
+          Value: false
+        wx200/left_finger_link:
+          Value: false
+        wx200/right_finger_link:
+          Value: false
+        wx200/shoulder_link:
+          Value: false
+        wx200/upper_arm_link:
+          Value: false
+        wx200/wrist_link:
+          Value: false
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          head_pan_link_static:
+            head_tilt_link_static:
+              camera_link_static:
+                {}
+          wx200/base_link:
+            camera_link:
+              camera_aligned_depth_to_color_frame:
+                camera_color_optical_frame:
+                  {}
+              camera_color_frame:
+                {}
+              camera_depth_frame:
+                camera_depth_optical_frame:
+                  {}
+            wx200/shoulder_link:
+              wx200/upper_arm_link:
+                wx200/forearm_link:
+                  wx200/wrist_link:
+                    wx200/gripper_link:
+                      wx200/ee_arm_link:
+                        wx200/gripper_bar_link:
+                          wx200/fingers_link:
+                            wx200/ee_gripper_link:
+                              {}
+                            wx200/left_finger_link:
+                              {}
+                            wx200/right_finger_link:
+                              {}
+                        wx200/gripper_prop_link:
+                          {}
+      Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
@@ -274,7 +455,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 1.5
+      Distance: 1.3534077405929565
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -290,14 +471,14 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.785398006439209
+      Pitch: 0.4253980815410614
       Target Frame: world
-      Yaw: 0.785398006439209
+      Yaw: 2.5603978633880615
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 689
+  Height: 1016
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -306,9 +487,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000027e00000257fc0200000008fb000000100044006900730070006c006100790073010000003d000000c9000000c900fffffffb0000000a00560069006500770073000000010500000174000000a400fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000010c000001880000017d00fffffffb0000000a0056006900650077007300000002ad0000015500000000000000000000017c0000025700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000001000000000000027e0000039efc0200000008fb000000100044006900730070006c006100790073010000003d00000210000000c900fffffffb0000000a00560069006500770073000000010500000174000000a400fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000253000001880000017d00fffffffb0000000a0056006900650077007300000002ad000001550000000000000000000007340000039e00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1024
-  X: 0
+  Width: 2488
+  X: 72
   Y: 27

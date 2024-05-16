@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot name="wx200" xmlns:xacro="http://ros.org/wiki/xacro">
 
+<xacro:include filename="$(find doris_sensors_description)/urdf/realsense_camera.urdf.xacro" />
+    <xacro:include filename="$(find hector_sensors_description)/urdf/realsense_d435_camera.urdf.xacro" />
+
   <xacro:arg name="robot_name" default = "wx200"/>
   <xacro:arg name="base_link_frame" default="base_link"/>
   <xacro:arg name="show_ar_tag" default="false"/>
@@ -28,6 +31,13 @@
       <child link="$(arg robot_name)/$(arg base_link_frame)"/>
     </joint>
   </xacro:if>
+
+  <xacro:realsense_camera name="camera" parent="world">
+    <!-- <link name="world"/> -->
+    <origin xyz="-0.34 0.0 0.465" rpy="0 0.26 0" />
+    <!-- <mesh filename="package://interbotix_xsarm_descriptions/meshes/realsense_d435_camera.dae"/> -->
+  </xacro:realsense_camera>
+
 
   <link name="$(arg robot_name)/$(arg base_link_frame)">
     <visual>
