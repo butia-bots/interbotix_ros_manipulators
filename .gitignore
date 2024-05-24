@@ -1,6 +1,5 @@
 *.pyc
 *.egg-info/
-*CATKIN_IGNORE
 
 *.bag
 !waist_diagnostics.bag
