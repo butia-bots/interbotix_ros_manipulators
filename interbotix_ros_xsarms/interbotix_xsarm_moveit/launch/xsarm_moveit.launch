@@ -9,8 +9,8 @@
   <arg name="base_link_frame"                   default="base_link"/>
   <arg name="show_ar_tag"                       default="false"/>
   <arg name="use_world_frame"                   default="true"/>
-  <arg name="use_trajectory_controllers"                   default="true"/>
-  <arg name="use_position_controllers"                   default="false"/>
+  <arg name="use_trajectory_controllers"        default="true"/>
+  <arg name="use_position_controllers"          default="false"/>
   <arg name="external_urdf_loc"                 default=""/>
   <arg name="external_srdf_loc"                 default=""/>
   <arg name="mode_configs"                      default="$(find interbotix_xsarm_moveit)/config/modes.yaml"/>
