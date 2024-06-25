@@ -34,7 +34,7 @@
   <arg name="depth_width"                       default="640"/>
   <arg name="depth_height"                      default="480"/> -->
 
-  <include if="$(arg use_gazebo)" file="$(find interbotix_xsarm_gazebo)/launch/xsarm_gazebo.launch">
+  <!-- <include if="$(arg use_gazebo)" file="$(find interbotix_xsarm_gazebo)/launch/xsarm_gazebo.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="base_link_frame"                   value="$(arg base_link_frame)"/>
@@ -48,7 +48,7 @@
     <arg name="yaw" default="$(arg yaw)"/>
     <arg name="use_trajectory_controllers"        value="$(arg use_trajectory_controllers)"/>
     <arg name="use_position_controllers"        value="$(arg use_position_controllers)"/>
-  </include>
+  </include> -->
 
   <include if="$(arg use_actual)" file="$(find interbotix_xsarm_ros_control)/launch/xsarm_ros_control.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
@@ -64,7 +64,7 @@
     <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
   </include>
 
-  <include if="$(arg use_fake)" file="$(find interbotix_xsarm_descriptions)/launch/xsarm_description.launch">
+  <!-- <include if="$(arg use_fake)" file="$(find interbotix_xsarm_descriptions)/launch/xsarm_description.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="base_link_frame"                   value="$(arg base_link_frame)"/>
@@ -75,7 +75,7 @@
     <arg name="use_joint_pub"                     value="true"/>
     <arg name="rate"                              value="100"/>
     <arg name="source_list"                       value="[move_group/fake_controller_joint_states]"/>
-  </include>
+  </include> -->
 
   <include file="$(find interbotix_xsarm_moveit)/launch/move_group.launch" ns="$(arg robot_name)">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
@@ -116,5 +116,6 @@
     <arg name="rviz_frame"                        value="$(arg rviz_frame)"/>
     <arg name="config"                            value="true"/>
   </include>
+
 
 </launch>

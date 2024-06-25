@@ -68,8 +68,8 @@
 
     <!-- GRIPPER POSITIONS -->
     <group_state name="Closed" group="interbotix_gripper">
-        <joint name="left_finger" value="0.015" />
-        <joint name="right_finger" value="-0.015" />
+        <joint name="left_finger" value="0.035" />
+        <joint name="right_finger" value="-0.035" />
     </group_state>
     <group_state name="Open" group="interbotix_gripper">
         <joint name="left_finger" value="0.037" />

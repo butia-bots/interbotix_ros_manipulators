@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="robot_model"                       default="wx200"/>
+  <arg name="robot_model"                       default=""/>
   <arg name="robot_name"                        default="$(arg robot_model)"/>
   <arg name="base_link_frame"                   default="base_link"/>
   <arg name="show_ar_tag"                       default="false"/>
@@ -35,11 +35,11 @@
     <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
   </include>
 
-      <include file="$(find butia_vision_launchfiles)/object_recognition.launch">
+      <!-- <include file="$(find butia_vision_launchfiles)/object_recognition.launch">
         <arg name="bvb_machine" value="localhost"/>
         <arg name="machine" value="localhost"/>
         <arg name="camera" value="$(arg camera)"/>
-    </include>
+    </include> -->
 
   <node
     name="xs_sdk"
