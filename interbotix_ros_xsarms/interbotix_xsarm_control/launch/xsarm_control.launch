@@ -35,11 +35,11 @@
     <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
   </include>
 
-      <include file="$(find butia_vision_launchfiles)/object_recognition.launch">
+      <!-- <include file="$(find butia_vision_launchfiles)/object_recognition.launch">
         <arg name="bvb_machine" value="localhost"/>
         <arg name="machine" value="localhost"/>
         <arg name="camera" value="$(arg camera)"/>
-    </include>
+    </include> -->
 
   <node
     name="xs_sdk"
