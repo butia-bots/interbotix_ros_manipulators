@@ -11,6 +11,7 @@
   <arg name="use_rviz"                          default="true"/>
   <arg name="load_gazebo_configs"               default="false"/>
   <arg name="use_joint_pub"                     default="false"/>
+  <arg name="use_state_pub"                     default="true"/>
   <arg name="use_joint_pub_gui"                 default="false"/>
   <arg name="rate"                              default="10"/>
   <arg name="source_list"                       default="[]"/>
@@ -43,8 +44,8 @@
     ns="$(arg robot_name)">
   </node>
 
-  <node
-    name="robot_state_publisher"
+  <node if="$(arg use_state_pub)"
+    name="robot_state_publisher2"
     pkg="robot_state_publisher"
     type="robot_state_publisher"
     ns="$(arg robot_name)">

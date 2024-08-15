@@ -1,0 +1,59 @@
+<launch>
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="z" default="0"/>
+  <arg name="yaw" default="0"/>
+
+  <arg name="use_world_frame"            default="false"/>
+  <arg name="use_trajectory_controllers" default="true"/>
+  <arg name="use_position_controllers"   default="false"/>
+  <arg name="base_link_frame"            default="base_link"/>
+  <arg name="show_ar_tag"                default="false"/>
+  <arg name="external_urdf_loc"          default=""/>
+  <arg name="external_srdf_loc"          default=""/>
+  <arg name="mode_configs"               default="$(find interbotix_xsarm_moveit)/config/modes.yaml"/>
+  <arg name="use_moveit_rviz"            default="false"/>
+  <arg name="rviz_frame"                 default="map"/>
+
+  <arg name="use_gazebo"                 default="false"/>
+  <arg name="use_actual"                 default="true"/>
+  
+  <arg name="use_joint_pub"              default="false"/>
+  <arg name="use_state_pub"              default="true"/>
+  <arg name="world_name"                 default="$(find interbotix_xsarm_gazebo)/worlds/xsarm_gazebo.world"/>
+
+  <include file="$(find interbotix_xsarm_moveit)/launch/xsarm_moveit.launch">
+    <arg name="x"                                 value="$(arg x)"/>
+    <arg name="y"                                 value="$(arg y)"/>
+    <arg name="z"                                 value="$(arg z)"/>
+    <arg name="yaw"                               value="$(arg yaw)"/>
+    <arg name="robot_model"                       value="doris_arm"/>
+    <arg name="robot_name"                        value="doris_arm"/>
+    <arg name="use_world_frame"                   value="$(arg use_world_frame)"/>
+    <arg name="use_trajectory_controllers"        value="$(arg use_trajectory_controllers)"/>
+    <arg name="use_position_controllers"          value="$(arg use_position_controllers)"/>
+    <arg name="use_gazebo"                        value="$(arg use_gazebo)"/>
+    <arg name="use_actual"                        value="$(arg use_actual)"/>
+    <arg name="use_fake"                          value="false"/>
+    <arg name="base_link_frame"                   value="base_link"/>
+    <arg name="show_ar_tag"                       value="false"/>
+    <arg name="dof"                               value="5"/>
+    <arg name="external_urdf_loc"                 value="$(arg external_urdf_loc)"/>
+    <arg name="external_srdf_loc"                 value="$(arg external_srdf_loc)"/>
+    <arg name="mode_configs"                      value="$(arg mode_configs)"/>
+    <arg name="use_moveit_rviz"                   value="$(arg use_moveit_rviz)"/>
+    <arg name="rviz_frame"                        value="$(arg rviz_frame)"/>
+  
+    <arg name="use_joint_pub"                     value="$(arg use_joint_pub)"/>
+    <arg name="use_state_pub"                     value="$(arg use_state_pub)"/>
+    <arg name="world_name"                        value="$(arg world_name)"/>
+  </include>
+
+    <include file="$(find interbotix_xsarm_moveit)/launch/sensor_manager.launch.xml">
+      <arg name="robot_name" value="doris" />
+      <arg name="base_link_frame" value="$(arg base_link_frame)"/>
+    </include>
+
+  <node pkg="tf" type="static_transform_publisher" name="static_arm" args="0.25 0 0.32 0 0 0 /dorso_link /doris_arm/base_link 100"/> 
+
+</launch>
