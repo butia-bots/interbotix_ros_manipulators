@@ -72,8 +72,8 @@
         <joint name="right_finger" value="-0.015" />
     </group_state>
     <group_state name="Open" group="interbotix_gripper">
-        <joint name="left_finger" value="0.037" />
-        <joint name="right_finger" value="-0.037" />
+        <joint name="left_finger" value="0.032" />
+        <joint name="right_finger" value="-0.032" />
     </group_state>
     <group_state name="Home" group="interbotix_gripper">
         <joint name="left_finger" value="0.0195" />
